@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+        CLOUD AGGREGATOR POM
+        =====================
+        This is an AGGREGATOR module — it groups cloud infrastructure modules together.
+
+        packaging=pom means it produces no JAR. It exists purely to:
+          1. Organize cloud modules (service-registry, config-server, api-gateway) as a group
+          2. Let you build all cloud modules with: cd cloud && mvn clean install
+          3. Pass down the parent POM's dependencyManagement/pluginManagement to children
+
+        Inheritance chain: root (airline-microservice) → cloud → service-registry/config-server/api-gateway
+        This means all properties, dependency versions, and plugin versions flow from root → here → children.
+    -->
+
+    <parent>
+        <groupId>in.choubeyshubham</groupId>
+        <artifactId>Airline-Booking-System</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <!--
+            relativePath tells Maven WHERE to find the parent POM on disk.
+            From cloud/pom.xml, the root pom.xml is at ../pom.xml (one directory up).
+            Maven uses this for LOCAL builds. Without it, Maven would search your
+            local .m2 repository, which fails if the parent isn't installed yet.
+        -->
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>cloud</artifactId>
+    <packaging>pom</packaging>
+    <name>Cloud Infrastructure</name>
+    <description>Aggregator for cloud infrastructure modules (Eureka, Config, Gateway)</description>
+
+    <!--
+        Sub-modules of this aggregator.
+        Running "mvn install" in this directory builds all three.
+    -->
+    <modules>
+        <module>service-registry</module>
+        <module>config-server</module>
+        <module>api-gateway</module>
+    </modules>
+
+</project>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+        SERVICES AGGREGATOR POM
+        ========================
+        Same pattern as cloud/pom.xml — groups all BUSINESS microservices together.
+
+        Your project has two categories of modules:
+          cloud/    → Infrastructure (Eureka, Config, Gateway) — things that support the system
+          services/ → Business logic (user, flight, booking)   — things that ARE the system
+
+        This aggregator lets you:
+          1. Build all services at once: cd services && mvn clean install
+          2. Add new services easily: just create a folder + add <module> here
+          3. Keep the root POM clean (it just lists "cloud" and "services", not every service)
+
+        Inheritance chain: root → services → user-service / flight-service / booking-service
+    -->
+    <parent>
+        <groupId>in.choubeyshubham</groupId>
+        <artifactId>Airline-Booking-System</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>services</artifactId>
+    <packaging>pom</packaging>
+    <name>Business Services</name>
+    <description>Aggregator for all business microservices (user, flight, booking, etc.)</description>
+
+    <modules>
+        <module>user-service</module>
+        <module>airline-core-service</module>
+        <module>location-service</module>
+        <module>seat-service</module>
+        <module>flight-ops-service</module>
+        <module>pricing-service</module>
+        <module>ancillary-service</module>
+        <module>booking-service</module>
+        <module>subscription-service</module>
+        <module>payment-service</module>
+        <module>notification-service</module>
+    </modules>
+
+</project>

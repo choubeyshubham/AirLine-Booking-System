@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>in.choubeyshubham</groupId>
+    <artifactId>Airline-Booking-System</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Airline-Booking-System</name>
+    <description>Airline-Booking-System</description>
+    <!--
+          MODULES
+          =======
+          Lists all child modules to include in the build.
+          When you run "mvn clean install" from this directory, Maven will
+          build these modules in dependency order automatically.
+
+          NOTE: "cloud" is an aggregator module that itself contains
+          service-registry, config-server, and api-gateway as sub-modules.
+      -->
+    <modules>
+        <module>common-lib</module>
+        <module>cloud</module>
+        <module>services</module>
+    </modules>
+
+    <!--
+        PROPERTIES
+        ==========
+        Centralized version numbers and build settings.
+        Any child POM can reference these with ${property.name}.
+        Change a version here → all children pick it up automatically.
+    -->
+    <properties>
+        <!-- Java version for compilation -->
+        <java.version>17</java.version>
+
+        <!--
+            Source encoding: prevents "platform default encoding" warnings.
+            Without this, Maven uses your OS default encoding (e.g., Windows-1252 on Windows),
+            which causes inconsistent builds across different developer machines.
+        -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- Framework versions — single source of truth -->
+        <spring.boot.version>4.0.2</spring.boot.version>
+        <spring.cloud.version>2025.1.0</spring.cloud.version>
+    </properties>
+
+    <!--
+        DEPENDENCY MANAGEMENT
+        =====================
+        Controls VERSIONS of dependencies, but does NOT add them.
+
+        How it works:
+        - You import Spring Boot and Spring Cloud BOMs (Bill of Materials) here
+        - BOMs are like a "version catalog" — they list hundreds of compatible library versions
+        - Child modules declare dependencies WITHOUT <version> tags
+        - Maven looks up the version from these BOMs automatically
+
+        Example: When a child declares spring-boot-starter-web without a version,
+        Maven resolves it to 4.0.2 because that's what spring-boot-dependencies 4.0.2 specifies.
+
+        WHY use BOMs instead of specifying versions individually?
+        Spring Boot 4.0.2 is tested with specific versions of Jackson, Hibernate, Tomcat, etc.
+        The BOM ensures you get those exact tested-compatible versions.
+        Manually picking versions risks incompatible library combinations.
+    -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- Spring Boot BOM — manages versions for all spring-boot-starter-* dependencies -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Spring Cloud BOM — manages versions for all spring-cloud-starter-* dependencies -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!--
+        BUILD / PLUGIN MANAGEMENT
+        =========================
+        Same concept as dependencyManagement, but for build plugins.
+
+        pluginManagement defines plugin versions and DEFAULT configurations.
+        Child modules can then use these plugins by just declaring the groupId:artifactId
+        WITHOUT repeating the version or configuration.
+
+        IMPORTANT: pluginManagement does NOT activate plugins — it only PRE-CONFIGURES them.
+        Children must still declare the plugin in their own <build><plugins> section to use it.
+
+        WHY is this needed?
+        Since we use spring-boot-dependencies BOM (via <scope>import</scope>) instead of
+        spring-boot-starter-parent as a direct <parent>, we lose the automatic plugin
+        configuration that starter-parent provides. We must configure these ourselves.
+    -->
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!--
+                    maven-compiler-plugin: Controls Java compilation settings.
+
+                    Without this, Maven defaults to Java 1.8 source/target level,
+                    which means your Java 17 features (records, sealed classes, etc.) won't compile.
+
+                    <source> = what Java syntax version to accept during compilation
+                    <target> = what bytecode version to generate in .class files
+                -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.13.0</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <parameters>true</parameters>
+                    </configuration>
+                </plugin>
+
+                <!--
+                    spring-boot-maven-plugin: Packages a module as an executable Spring Boot JAR.
+
+                    What it does:
+                    - Repackages the JAR to include all dependencies inside it
+                    - Adds a special launcher class so you can run it with "java -jar app.jar"
+                    - Without this, you'd get a plain JAR that can't start on its own
+
+                    ONLY runnable services should use this plugin (NOT libraries like common-lib).
+                    Libraries should produce plain JARs that other modules depend on.
+
+                    Version is defined here; children just reference the plugin without a version.
+                -->
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring.boot.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
