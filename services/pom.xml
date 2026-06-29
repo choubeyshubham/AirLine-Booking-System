@@ -34,17 +34,29 @@
     <description>Aggregator for all business microservices (user, flight, booking, etc.)</description>
 
     <modules>
-        <module>user-service</module>
-        <module>airline-core-service</module>
+<!--        <module>user-service</module>-->
+<!--        <module>airline-core-service</module>-->
         <module>location-service</module>
-        <module>seat-service</module>
-        <module>flight-ops-service</module>
-        <module>pricing-service</module>
-        <module>ancillary-service</module>
-        <module>booking-service</module>
-        <module>subscription-service</module>
-        <module>payment-service</module>
-        <module>notification-service</module>
+<!--        <module>seat-service</module>-->
+<!--        <module>flight-ops-service</module>-->
+<!--        <module>pricing-service</module>-->
+<!--        <module>ancillary-service</module>-->
+<!--        <module>booking-service</module>-->
+<!--        <module>subscription-service</module>-->
+<!--        <module>payment-service</module>-->
+<!--        <module>notification-service</module>-->
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
 
 </project>

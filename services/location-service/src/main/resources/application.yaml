@@ -1,0 +1,14 @@
+server:
+  port: 5004
+spring:
+  cloud:
+    config:
+      enabled: false
+
+  application:
+    name: location-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/airline_microservice #?useSSL=false&serverTimezone=UTC
+    username: shubham
+    password: shubham96

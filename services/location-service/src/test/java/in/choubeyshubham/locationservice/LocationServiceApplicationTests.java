@@ -1,10 +1,10 @@
-package in.choubeyshubham.airlinebookingsystem;
+package in.choubeyshubham.locationservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AirlineBookingSystemApplicationTests {
+class LocationServiceApplicationTests {
 
     @Test
     void contextLoads() {

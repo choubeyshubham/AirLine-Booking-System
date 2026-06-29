@@ -42,9 +42,9 @@
         Running "mvn install" in this directory builds all three.
     -->
     <modules>
-        <module>service-registry</module>
-        <module>config-server</module>
-        <module>api-gateway</module>
+<!--        <module>service-registry</module>-->
+<!--        <module>config-server</module>-->
+<!--        <module>api-gateway</module>-->
     </modules>
 
 </project>

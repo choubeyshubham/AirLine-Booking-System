@@ -35,6 +35,7 @@
     <properties>
         <!-- Java version for compilation -->
         <java.version>17</java.version>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
 
         <!--
             Source encoding: prevents "platform default encoding" warnings.
@@ -93,14 +94,13 @@
     <!--
         BUILD / PLUGIN MANAGEMENT
         =========================
-        Same concept as dependencyManagement, but for build plugins.
+        <plugins> activates build plugins inherited by child modules.
 
-        pluginManagement defines plugin versions and DEFAULT configurations.
-        Child modules can then use these plugins by just declaring the groupId:artifactId
-        WITHOUT repeating the version or configuration.
+        <pluginManagement> defines plugin versions and DEFAULT configurations.
+        Child modules can then use those managed plugins without repeating versions.
 
         IMPORTANT: pluginManagement does NOT activate plugins — it only PRE-CONFIGURES them.
-        Children must still declare the plugin in their own <build><plugins> section to use it.
+        Plugins placed directly in <build><plugins> are active and inherited by child modules.
 
         WHY is this needed?
         Since we use spring-boot-dependencies BOM (via <scope>import</scope>) instead of
@@ -108,28 +108,21 @@
         configuration that starter-parent provides. We must configure these ourselves.
     -->
     <build>
+        <plugins>
+            <!-- Active in the parent so every module inherits Java 17 compilation. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <release>${maven.compiler.release}</release>
+                    <parameters>true</parameters>
+                </configuration>
+            </plugin>
+        </plugins>
+
         <pluginManagement>
             <plugins>
-                <!--
-                    maven-compiler-plugin: Controls Java compilation settings.
-
-                    Without this, Maven defaults to Java 1.8 source/target level,
-                    which means your Java 17 features (records, sealed classes, etc.) won't compile.
-
-                    <source> = what Java syntax version to accept during compilation
-                    <target> = what bytecode version to generate in .class files
-                -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.13.0</version>
-                    <configuration>
-                        <source>${java.version}</source>
-                        <target>${java.version}</target>
-                        <parameters>true</parameters>
-                    </configuration>
-                </plugin>
-
                 <!--
                     spring-boot-maven-plugin: Packages a module as an executable Spring Boot JAR.
 
