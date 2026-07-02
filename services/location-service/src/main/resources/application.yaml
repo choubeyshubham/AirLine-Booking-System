@@ -9,6 +9,6 @@ spring:
     name: location-service
 
   datasource:
-    url: jdbc:mysql://localhost:3306/airline_microservice #?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/airline_location_db #?useSSL=false&serverTimezone=UTC
     username: shubham
     password: shubham96
