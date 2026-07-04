@@ -1,14 +1,11 @@
 package in.choubeyshubham.locationservice.controller;
 
-import in.choubeyshubham.locationservice.repository.CityRepository;
 import in.choubeyshubham.locationservice.service.implementation.CityServiceImpl;
 import in.choubeyshubham.payload.request.CityRequest;
 import in.choubeyshubham.payload.response.ApiResponse;
 import in.choubeyshubham.payload.response.CityResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import lombok.Value;
-import org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -17,7 +14,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 @RestController
 @RequiredArgsConstructor

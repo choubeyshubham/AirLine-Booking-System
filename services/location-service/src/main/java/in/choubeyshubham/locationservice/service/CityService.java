@@ -6,7 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 
-public interface ICityService {
+public interface CityService {
 
     CityResponse createCity(CityRequest request) throws  Exception;
     CityResponse getCityById(Long id) throws  Exception;

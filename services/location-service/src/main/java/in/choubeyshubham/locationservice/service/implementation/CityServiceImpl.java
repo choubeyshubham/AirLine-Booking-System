@@ -3,18 +3,17 @@ package in.choubeyshubham.locationservice.service.implementation;
 import in.choubeyshubham.locationservice.mapper.CityMapper;
 import in.choubeyshubham.locationservice.model.City;
 import in.choubeyshubham.locationservice.repository.CityRepository;
-import in.choubeyshubham.locationservice.service.ICityService;
+import in.choubeyshubham.locationservice.service.CityService;
 import in.choubeyshubham.payload.request.CityRequest;
 import in.choubeyshubham.payload.response.CityResponse;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class CityServiceImpl implements ICityService {
+public class CityServiceImpl implements CityService {
 
     private final CityRepository cityRepository;
 
