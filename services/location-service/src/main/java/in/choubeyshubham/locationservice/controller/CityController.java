@@ -52,7 +52,7 @@ public class CityController {
 
     //--------------- Update / PUT ---------------------------
 
-    @PutMapping("/{id")
+    @PutMapping("/{id}")
     public ResponseEntity<CityResponse> updateCity(@PathVariable Long id, @Valid @RequestBody CityRequest request) throws Exception {
         return ResponseEntity.ok(cityService.updateCity(id, request));
     }

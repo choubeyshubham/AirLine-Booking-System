@@ -35,7 +35,7 @@ public class AirportController {
     }
 
     @GetMapping("/city/{cityId}")
-    public ResponseEntity<List<AirportResponse>> getAirportByCityId(@RequestParam String name, @PathVariable Long cityId) throws Exception {
+    public ResponseEntity<List<AirportResponse>> getAirportByCityId( @PathVariable Long cityId) throws Exception {
         return ResponseEntity.ok(airportService.getAirportsByCityId(cityId));
     }
 
