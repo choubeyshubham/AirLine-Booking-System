@@ -1,0 +1,22 @@
+server:
+  port: 5001
+spring:
+  cloud:
+    config:
+      enabled: false
+
+  application:
+    name: user-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/airline_location_db #?useSSL=false&serverTimezone=UTC
+    username: shubham
+    password: shubham96
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update # Options: none, update, validate, create, create-drop
+    show-sql: true # Prints SQL queries in the console for debugging
+    properties:
+      hibernate:
+        format_sql: true
