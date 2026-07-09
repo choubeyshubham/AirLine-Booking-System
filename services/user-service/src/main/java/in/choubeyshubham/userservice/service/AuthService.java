@@ -5,9 +5,9 @@ import in.choubeyshubham.payload.response.AuthResponse;
 
 public interface AuthService {
 
-    AuthResponse login(String email, String password);
-    AuthResponse signup(UserDTO req);
 
+    AuthResponse login(String email, String password) ;//throws UserException;
+    AuthResponse signup(UserDTO req) ;//throws UserException;
 
 
 }
