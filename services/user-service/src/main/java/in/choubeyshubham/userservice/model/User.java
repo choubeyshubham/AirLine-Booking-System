@@ -1,6 +1,7 @@
 package in.choubeyshubham.userservice.model;
 
 
+import in.choubeyshubham.enums.UserRole;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -35,7 +36,6 @@ public class User {
     private String email;
 
     private String phone;
-
 
     @Column(nullable = false)
     @NotNull(message = "Role is mandatory")

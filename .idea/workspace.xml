@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3f43c1c1-5195-46a9-adab-6f6bd8d445b0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="42" />
+    <option name="cachedIndexableFilesCount" value="58" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,60 +38,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000000000161699" />
-      <entry key="S2" value="1.0040236327108696" />
-      <entry key="S5" value="1.1906991292748204" />
-      <entry key="S10" value="1.8290453755866594" />
-      <entry key="S30" value="3.5344951716722512" />
-      <entry key="S60" value="4.680587126739999" />
-      <entry key="M2" value="5.613399302178913" />
-      <entry key="M5" value="6.374719052869206" />
-      <entry key="M10" value="6.6738738026762485" />
-      <entry key="M15" value="6.780251668917223" />
-      <entry key="M30" value="7.075864520525458" />
-      <entry key="H1" value="9.964116624025573" />
-      <entry key="H2" value="19.569436027632275" />
-      <entry key="H4" value="35.00461790316303" />
-      <entry key="D1" value="283.47407485814455" />
-      <entry key="W1" value="675.4368404618248" />
+      <entry key="MS500" value="1.0002989102520685" />
+      <entry key="S2" value="1.1320411150117053" />
+      <entry key="S5" value="1.543217852285507" />
+      <entry key="S10" value="2.3136804858912607" />
+      <entry key="S30" value="4.864980176888237" />
+      <entry key="S60" value="7.181326635760055" />
+      <entry key="M2" value="9.368395527034664" />
+      <entry key="M5" value="12.04029679364517" />
+      <entry key="M10" value="18.920362042068874" />
+      <entry key="M15" value="26.759433487938132" />
+      <entry key="M30" value="43.088238240288995" />
+      <entry key="H1" value="58.92291648356969" />
+      <entry key="H2" value="76.35820595101497" />
+      <entry key="H4" value="96.64306389086528" />
+      <entry key="D1" value="347.98226956355296" />
+      <entry key="W1" value="743.7293387199849" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="1.2001419044227392E-164" />
-      <entry key="S60" value="3.0514249488087024E-82" />
-      <entry key="M2" value="4.922942348231355E-41" />
-      <entry key="M5" value="2.7390893378720435E-16" />
-      <entry key="M10" value="5.820569481980532E-8" />
-      <entry key="M15" value="3.827375104970602E-5" />
-      <entry key="M30" value="0.027873485690845697" />
-      <entry key="H1" value="0.8244388191909459" />
-      <entry key="H2" value="4.754491675688244" />
-      <entry key="H4" value="13.71052150897683" />
-      <entry key="D1" value="262.38246413207264" />
-      <entry key="W1" value="608.5906017935711" />
+      <entry key="MS100" value="6.207950800722274E-54" />
+      <entry key="MS500" value="2.2834402564258235E-11" />
+      <entry key="S2" value="0.002188164542082608" />
+      <entry key="S5" value="0.09257280849216616" />
+      <entry key="S10" value="0.4171438270847438" />
+      <entry key="S30" value="2.4856074309095137" />
+      <entry key="S60" value="5.239078756424536" />
+      <entry key="M2" value="8.089327171310785" />
+      <entry key="M5" value="10.935980756062046" />
+      <entry key="M10" value="13.774965947480842" />
+      <entry key="M15" value="16.24038749088611" />
+      <entry key="M30" value="20.90390304564123" />
+      <entry key="H1" value="25.230201262116623" />
+      <entry key="H2" value="31.01315549502154" />
+      <entry key="H4" value="40.917019823729035" />
+      <entry key="D1" value="287.85278527051213" />
+      <entry key="W1" value="637.128588800359" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8010698775896221" />
-      <entry key="MS500" value="0.956608158142479" />
-      <entry key="S2" value="0.9920024975945848" />
-      <entry key="S5" value="1.1629763832337403" />
-      <entry key="S10" value="1.765354691791916" />
-      <entry key="S30" value="3.464728107152322" />
-      <entry key="S60" value="4.632540119636907" />
-      <entry key="M2" value="5.585028995389855" />
-      <entry key="M5" value="6.362144762725561" />
-      <entry key="M10" value="6.6673642822080295" />
-      <entry key="M15" value="6.77589922210798" />
-      <entry key="M30" value="7.101477393692336" />
-      <entry key="H1" value="10.786872376212925" />
-      <entry key="H2" value="24.3218072592307" />
-      <entry key="H4" value="48.71278777050118" />
-      <entry key="D1" value="545.8517980526415" />
-      <entry key="W1" value="1284.0259244896329" />
+      <entry key="MS100" value="0.8766057213160351" />
+      <entry key="MS500" value="0.9742450480140643" />
+      <entry key="S2" value="1.1194744984752698" />
+      <entry key="S5" value="1.585223266215492" />
+      <entry key="S10" value="2.6247366861066532" />
+      <entry key="S30" value="7.190789018867779" />
+      <entry key="S60" value="12.265838332446283" />
+      <entry key="M2" value="17.341859370160822" />
+      <entry key="M5" value="22.91426472048511" />
+      <entry key="M10" value="32.65587910292352" />
+      <entry key="M15" value="42.96844100160974" />
+      <entry key="M30" value="63.97155660230764" />
+      <entry key="H1" value="84.14044799725609" />
+      <entry key="H2" value="107.36328776364851" />
+      <entry key="H4" value="137.55462593376177" />
+      <entry key="D1" value="635.8298124803657" />
+      <entry key="W1" value="1380.8563300405308" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -108,39 +109,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "New/updated database configurations found",
-    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.LocationServiceApplication.executor": "Run",
-    "Spring Boot.UserServiceApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/shubh/IdeaProjects/AirLine Booking System/services/user-service/src/main/java/in/choubeyshubham/userservice/service",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.completion.inline",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;New/updated database configurations found&quot;,
+    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.LocationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/shubh/IdeaProjects/AirLine Booking System/services/user-service/src/main/java/in/choubeyshubham/userservice/service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion.inline&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\shubh\IdeaProjects\AirLine Booking System\services\user-service\src\main\java\in\choubeyshubham\userservice\service" />
@@ -187,7 +188,9 @@
       <workItem from="1782795376636" duration="7383000" />
       <workItem from="1782965356659" duration="12004000" />
       <workItem from="1783043794654" duration="28437000" />
-      <workItem from="1783137894320" duration="38184000" />
+      <workItem from="1783137894320" duration="41262000" />
+      <workItem from="1783517886727" duration="568000" />
+      <workItem from="1783555567316" duration="1147000" />
     </task>
     <servers />
   </component>
