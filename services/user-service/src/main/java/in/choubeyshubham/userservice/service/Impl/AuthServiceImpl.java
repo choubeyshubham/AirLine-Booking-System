@@ -1,12 +1,17 @@
 package in.choubeyshubham.userservice.service.Impl;
 
+import in.choubeyshubham.enums.UserRole;
 import in.choubeyshubham.payload.dto.UserDTO;
 import in.choubeyshubham.payload.response.AuthResponse;
+import in.choubeyshubham.userservice.model.User;
 import in.choubeyshubham.userservice.repository.UserRepository;
 import in.choubeyshubham.userservice.service.AuthService;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.time.LocalDateTime;
 
 
 @RequiredArgsConstructor
@@ -14,12 +19,9 @@ import org.springframework.stereotype.Service;
 public class AuthServiceImpl implements AuthService {
 
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
 
-    @Override
-    public AuthResponse signup(UserDTO req) {
-        return null;
-    }
 
     //---------------
     @Override
@@ -41,16 +43,16 @@ public class AuthServiceImpl implements AuthService {
         3. Save user in database
         4. Generate JWT token
         5. Return token and user information
-
+*/
     @Override
-    public AuthResponse signup(UserDTO req) throws UserException {
+    public AuthResponse signup(UserDTO req) throws Exception {
         User existingUser = userRepository.findByEmail(req.getEmail());
         if (existingUser != null) {
-            throw new UserException("Email already registered");
+            throw new Exception("Email already registered");
         }
 
         if (req.getRole() == UserRole.ROLE_SYSTEM_ADMIN) {
-            throw new UserException("Cannot register as SYSTEM_ADMIN");
+            throw new Exception("Cannot register as SYSTEM_ADMIN");
         }
 
         User createdUser = new User();
@@ -61,6 +63,7 @@ public class AuthServiceImpl implements AuthService {
         createdUser.setRole(req.getRole());
         createdUser.setLastLogin(LocalDateTime.now());
 
+        /*
         User savedUser = userRepository.save(createdUser);
 
         Authentication authentication

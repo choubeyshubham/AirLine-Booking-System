@@ -7,7 +7,7 @@ public interface AuthService {
 
 
     AuthResponse login(String email, String password) ;//throws UserException;
-    AuthResponse signup(UserDTO req) ;//throws UserException;
+    AuthResponse signup(UserDTO req) throws Exception;//throws UserException;
 
 
 }
