@@ -3,6 +3,8 @@ package in.choubeyshubham.userservice.service.Impl;
 import in.choubeyshubham.enums.UserRole;
 import in.choubeyshubham.payload.dto.UserDTO;
 import in.choubeyshubham.payload.response.AuthResponse;
+import in.choubeyshubham.userservice.config.JwtProvider;
+import in.choubeyshubham.userservice.mapper.UserMapper;
 import in.choubeyshubham.userservice.model.User;
 import in.choubeyshubham.userservice.repository.UserRepository;
 import in.choubeyshubham.userservice.service.AuthService;
@@ -20,6 +22,7 @@ public class AuthServiceImpl implements AuthService {
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
+    private final JwtProvider jwtProvider;
 
 
 
@@ -31,12 +34,10 @@ public class AuthServiceImpl implements AuthService {
 
     //--------------
 
-    /*
-    private final PasswordEncoder passwordEncoder;
-    private final JwtProvider jwtProvider;
-    private final CustomUserDetailsService customUserDetailsService;
 
+//    private final CustomUserDetailsService customUserDetailsService;
 
+/*
     Steps:
         1. Check if email already exists
         2. Encode password using BCrypt
@@ -63,25 +64,25 @@ public class AuthServiceImpl implements AuthService {
         createdUser.setRole(req.getRole());
         createdUser.setLastLogin(LocalDateTime.now());
 
-        /*
+
         User savedUser = userRepository.save(createdUser);
 
-        Authentication authentication
-                = new UsernamePasswordAuthenticationToken(
-                savedUser.getEmail(), savedUser.getPassword()
-        );
-        SecurityContextHolder.getContext().setAuthentication(authentication);
+//        Authentication authentication
+//                = new UsernamePasswordAuthenticationToken(
+//                savedUser.getEmail(), savedUser.getPassword()
+//        );
+//        SecurityContextHolder.getContext().setAuthentication(authentication);
         String jwt = jwtProvider.generateToken(authentication, savedUser.getId());
 
         AuthResponse response = new AuthResponse();
         response.setTitle("Welcome " + savedUser.getFullName());
         response.setMessage("Registration successful");
         response.setUser(UserMapper.toDTO(savedUser));
-        response.setJwt(jwt);
+//        response.setJwt(jwt);
         return response;
     }
 
-
+  /*
     Steps:
         1. Load user by email
         2. Compare password with BCrypt

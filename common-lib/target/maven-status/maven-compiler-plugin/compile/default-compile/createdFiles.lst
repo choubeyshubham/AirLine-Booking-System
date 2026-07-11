@@ -1,0 +1,11 @@
+in\choubeyshubham\payload\response\AirportResponse.class
+in\choubeyshubham\payload\dto\UserDTO.class
+in\choubeyshubham\CommonApplication.class
+in\choubeyshubham\payload\request\AirportRequest.class
+in\choubeyshubham\embeddable\Address.class
+in\choubeyshubham\payload\response\AuthResponse.class
+in\choubeyshubham\payload\request\CityRequest.class
+in\choubeyshubham\embeddable\GeoCode.class
+in\choubeyshubham\enums\UserRole.class
+in\choubeyshubham\payload\response\ApiResponse.class
+in\choubeyshubham\payload\response\CityResponse.class
