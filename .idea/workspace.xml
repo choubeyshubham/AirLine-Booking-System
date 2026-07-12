@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3f43c1c1-5195-46a9-adab-6f6bd8d445b0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/config/JwtConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/config/JwtConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/config/JwtProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/config/JwtProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/service/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/service/Impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/in/choubeyshubham/userservice/service/Impl/AuthServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -198,7 +198,11 @@
       <workItem from="1783517886727" duration="568000" />
       <workItem from="1783555567316" duration="4161000" />
       <workItem from="1783610232252" duration="7693000" />
-      <workItem from="1783737135154" duration="2352000" />
+      <workItem from="1783737135154" duration="3693000" />
+      <workItem from="1783773568191" duration="736000" />
+      <workItem from="1783821564943" duration="555000" />
+      <workItem from="1783822291178" duration="1245000" />
+      <workItem from="1783863837040" duration="2044000" />
     </task>
     <servers />
   </component>

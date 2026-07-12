@@ -10,6 +10,8 @@ import in.choubeyshubham.userservice.repository.UserRepository;
 import in.choubeyshubham.userservice.service.AuthService;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -67,10 +69,10 @@ public class AuthServiceImpl implements AuthService {
 
         User savedUser = userRepository.save(createdUser);
 
-//        Authentication authentication
-//                = new UsernamePasswordAuthenticationToken(
-//                savedUser.getEmail(), savedUser.getPassword()
-//        );
+        Authentication authentication
+                = new UsernamePasswordAuthenticationToken(
+                savedUser.getEmail(), savedUser.getPassword()
+        );
 //        SecurityContextHolder.getContext().setAuthentication(authentication);
         String jwt = jwtProvider.generateToken(authentication, savedUser.getId());
 
