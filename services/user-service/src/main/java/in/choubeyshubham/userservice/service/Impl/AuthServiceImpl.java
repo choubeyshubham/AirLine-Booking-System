@@ -12,6 +12,7 @@ import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -25,19 +26,16 @@ public class AuthServiceImpl implements AuthService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtProvider jwtProvider;
+    private final CustomUserDetailsService customUserDetailsService;
 
 
-
-    //---------------
     @Override
     public AuthResponse login(String email, String password) {
         return null;
     }
 
-    //--------------
 
 
-//    private final CustomUserDetailsService customUserDetailsService;
 
 /*
     Steps:
@@ -73,7 +71,7 @@ public class AuthServiceImpl implements AuthService {
                 = new UsernamePasswordAuthenticationToken(
                 savedUser.getEmail(), savedUser.getPassword()
         );
-//        SecurityContextHolder.getContext().setAuthentication(authentication);
+        SecurityContextHolder.getContext().setAuthentication(authentication);
         String jwt = jwtProvider.generateToken(authentication, savedUser.getId());
 
         AuthResponse response = new AuthResponse();
