@@ -4,7 +4,6 @@ package in.choubeyshubham.userservice.service.Impl;
 import in.choubeyshubham.userservice.model.User;
 import in.choubeyshubham.userservice.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.jspecify.annotations.NonNull;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -27,7 +26,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     private final UserRepository userRepository;
 
     @Override
-    public UserDetails loadUserByUsername(@NonNull String email) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         User user = userRepository.findByEmail(email);
 
         if (user == null) {
@@ -43,4 +42,3 @@ public class CustomUserDetailsService implements UserDetailsService {
         );
     }
 }
-
