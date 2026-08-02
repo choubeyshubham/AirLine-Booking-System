@@ -1,6 +1,7 @@
 package in.choubeyshubham.userservice.service.Impl;
 
 import in.choubeyshubham.enums.UserRole;
+import in.choubeyshubham.exception.UserException;
 import in.choubeyshubham.payload.dto.UserDTO;
 import in.choubeyshubham.payload.response.AuthResponse;
 import in.choubeyshubham.userservice.config.JwtProvider;
@@ -17,6 +18,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+
+
+
 
 @Service
 @RequiredArgsConstructor
@@ -36,14 +40,14 @@ public class AuthServiceImpl implements AuthService {
         5. Return token and user information
     */
     @Override
-    public AuthResponse signup(UserDTO req) throws Exception {
+    public AuthResponse signup(UserDTO req) throws UserException {
         User existingUser = userRepository.findByEmail(req.getEmail());
         if (existingUser != null) {
-            throw new Exception("Email already registered");
+            throw new UserException("Email already registered");
         }
 
         if (req.getRole() == UserRole.ROLE_SYSTEM_ADMIN) {
-            throw new Exception("Cannot register as SYSTEM_ADMIN");
+            throw new UserException("Cannot register as SYSTEM_ADMIN");
         }
 
         User createdUser = new User();
@@ -80,7 +84,7 @@ public class AuthServiceImpl implements AuthService {
         5. Return token and user information
     */
     @Override
-    public AuthResponse login(String email, String password) throws Exception {
+    public AuthResponse login(String email, String password) throws UserException {
         Authentication authentication = authenticate(email, password);
         SecurityContextHolder.getContext().setAuthentication(authentication);
 
@@ -98,14 +102,14 @@ public class AuthServiceImpl implements AuthService {
         return response;
     }
 
-    private Authentication authenticate(String email, String password) throws Exception {
+    private Authentication authenticate(String email, String password) throws UserException {
         UserDetails userDetails = customUserDetailsService
                 .loadUserByUsername(email);
         if (userDetails == null) {
-            throw new Exception("User not found with email: " + email);
+            throw new UserException("User not found with email: " + email);
         }
         if (!passwordEncoder.matches(password, userDetails.getPassword())) {
-            throw new Exception("Invalid password");
+            throw new UserException("Invalid password");
         }
         return new UsernamePasswordAuthenticationToken(
                 email, null, userDetails.getAuthorities());
