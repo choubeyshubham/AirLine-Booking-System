@@ -2,6 +2,8 @@ package in.choubeyshubham.userservice.service.Impl;
 
 
 import in.choubeyshubham.exception.UserException;
+import in.choubeyshubham.payload.dto.UserDTO;
+import in.choubeyshubham.userservice.mapper.UserMapper;
 import in.choubeyshubham.userservice.model.User;
 import in.choubeyshubham.userservice.repository.UserRepository;
 import in.choubeyshubham.userservice.service.UserService;
@@ -17,18 +19,19 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
 
     @Override
-    public User getUserByEmail(String email) throws UserException {
+    public UserDTO getUserByEmail(String email) throws UserException {
         User user = userRepository.findByEmail(email);
         if (user == null) {
             throw new UserException("User not found with email: " + email);
         }
-        return user;
+return UserMapper.toDTO(user);
     }
 
     @Override
-    public User getUserById(Long id) throws UserException {
-        return userRepository.findById(id)
+    public UserDTO getUserById(Long id) throws UserException {
+        User user = userRepository.findById(id)
                 .orElseThrow(() -> new UserException("User not found with id: " + id));
+        return UserMapper.toDTO(user);
     }
 
     @Override

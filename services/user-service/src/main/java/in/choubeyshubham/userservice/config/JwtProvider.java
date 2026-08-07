@@ -29,7 +29,8 @@ public class JwtProvider {
                 .compact();
     }
 
-    public String getEmailFromJwtToken(String jwt) {
+    public String getEmailFromJwtToken(String jwt)
+    {
         if (jwt.startsWith(JwtConstant.TOKEN_PREFIX)) {
             jwt = jwt.substring(JwtConstant.TOKEN_PREFIX.length());
         }

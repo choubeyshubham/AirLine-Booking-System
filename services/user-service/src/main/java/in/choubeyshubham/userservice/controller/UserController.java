@@ -6,7 +6,6 @@ import in.choubeyshubham.payload.dto.UserDTO;
 import in.choubeyshubham.userservice.mapper.UserMapper;
 import in.choubeyshubham.userservice.model.User;
 import in.choubeyshubham.userservice.service.UserService;
-import jdk.jshell.spi.ExecutionControl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,17 +22,17 @@ public class UserController {
     private final UserService userService;
 
     @GetMapping("/api/users/profile")
-    public ResponseEntity<UserDTO> getUserProfile(
+    public ResponseEntity<UserDTO> getUserProfile( 
             @RequestHeader("X-User-Email") String email) throws UserException {
-        User user = userService.getUserByEmail(email);
-        return ResponseEntity.ok(UserMapper.toDTO(user));
+        UserDTO user = userService.getUserByEmail(email);
+        return ResponseEntity.ok(user);
     }
 
     @GetMapping("/api/users/{userId}")
     public ResponseEntity<UserDTO> getUserById(
             @PathVariable Long userId) throws UserException {
-        User user = userService.getUserById(userId);
-        return ResponseEntity.ok(UserMapper.toDTO(user));
+        UserDTO user = userService.getUserById(userId);
+        return ResponseEntity.ok((user));
     }
 
     @GetMapping("/api/users")
