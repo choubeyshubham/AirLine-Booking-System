@@ -1,6 +1,7 @@
 package in.choubeyshubham.model;
 
 
+import in.choubeyshubham.enums.AircraftStatus;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
