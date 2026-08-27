@@ -34,12 +34,11 @@ public class AirlineResponse {
 
     private Long headquartersCityId;
 //    private String headquartersCityName;
-//
 //    private String supportEmail;
 //    private String supportPhone;
 //    private String supportHours;
 
-    private Instant createdAt;
+        private Instant createdAt;
     private Instant updatedAt;
 
     private Long ownerId;
