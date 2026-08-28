@@ -11,9 +11,10 @@ import in.choubeyshubham.repository.AirlineRepository;
 import in.choubeyshubham.service.AirlineService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.awt.print.Pageable;
+
 import java.util.List;
 
 @Service
