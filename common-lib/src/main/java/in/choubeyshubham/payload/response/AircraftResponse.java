@@ -1,4 +1,4 @@
-package in.choubeyshubham.payload.request;
+package in.choubeyshubham.payload.response;
 
 
 import in.choubeyshubham.enums.AircraftStatus;

@@ -1,12 +1,18 @@
 package in.choubeyshubham.service.impl;
 
 
+import in.choubeyshubham.mapper.AircraftMapper;
 import in.choubeyshubham.model.Aircraft;
 import in.choubeyshubham.model.Airline;
+import in.choubeyshubham.payload.request.AircraftRequest;
+import in.choubeyshubham.payload.response.AircraftResponse;
 import in.choubeyshubham.repository.AircraftRepository;
 import in.choubeyshubham.repository.AirlineRepository;
+import in.choubeyshubham.service.AircraftService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
