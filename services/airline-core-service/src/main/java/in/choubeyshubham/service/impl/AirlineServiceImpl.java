@@ -16,6 +16,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -79,7 +81,6 @@ public class AirlineServiceImpl implements AirlineService {
     }
 
     @Override
-
     public AirlineResponse changeStatusByAdmin(Long airlineId, AirlineStatus status) throws Exception {
         Airline airline=airlineRepository.findById(airlineId)
                 .orElseThrow(
