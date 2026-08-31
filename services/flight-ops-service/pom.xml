@@ -6,8 +6,9 @@
         <groupId>in.choubeyshubham</groupId>
         <artifactId>services</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
+<!--        <relativePath>../pom.xml</relativePath>-->
     </parent>
+
     <artifactId>flight-ops-service</artifactId>
     <name>flight-ops-service</name>
     <description>flight-ops-service</description>
@@ -80,14 +81,14 @@
                         <goals>
                             <goal>compile</goal>
                         </goals>
-                        <configuration>
-                            <annotationProcessorPaths>
-                                <path>
-                                    <groupId>org.projectlombok</groupId>
-                                    <artifactId>lombok</artifactId>
-                                </path>
-                            </annotationProcessorPaths>
-                        </configuration>
+<!--                        <configuration>-->
+<!--                            <annotationProcessorPaths>-->
+<!--                                <path>-->
+<!--                                    <groupId>org.projectlombok</groupId>-->
+<!--                                    <artifactId>lombok</artifactId>-->
+<!--                                </path>-->
+<!--                            </annotationProcessorPaths>-->
+<!--                        </configuration>-->
                     </execution>
                     <execution>
                         <id>default-testCompile</id>
@@ -95,14 +96,14 @@
                         <goals>
                             <goal>testCompile</goal>
                         </goals>
-                        <configuration>
-                            <annotationProcessorPaths>
-                                <path>
-                                    <groupId>org.projectlombok</groupId>
-                                    <artifactId>lombok</artifactId>
-                                </path>
-                            </annotationProcessorPaths>
-                        </configuration>
+<!--                        <configuration>-->
+<!--                            <annotationProcessorPaths>-->
+<!--                                <path>-->
+<!--                                    <groupId>org.projectlombok</groupId>-->
+<!--                                    <artifactId>lombok</artifactId>-->
+<!--                                </path>-->
+<!--                            </annotationProcessorPaths>-->
+<!--                        </configuration>-->
                     </execution>
                 </executions>
             </plugin>
