@@ -1,6 +1,8 @@
 package in.choubeyshubham.flightOpsService.service.Impl;
 
 import in.choubeyshubham.enums.FlightStatus;
+import in.choubeyshubham.flightOpsService.client.AirlineClient;
+import in.choubeyshubham.flightOpsService.client.LocationClient;
 import in.choubeyshubham.flightOpsService.mapper.FlightMapper;
 import in.choubeyshubham.flightOpsService.model.Flight;
 import in.choubeyshubham.flightOpsService.repository.FlightRepository;
