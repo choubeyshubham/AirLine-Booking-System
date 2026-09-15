@@ -41,7 +41,7 @@ public class FlightScheduleController {
             @RequestHeader("X-User-Id") Long userId
     ) {
         return ResponseEntity.ok(
-                flightScheduleService.getFlightScheduleByAirline(userId)
+                    flightScheduleService.getFlightScheduleByAirline(userId)
         );
     }
 
