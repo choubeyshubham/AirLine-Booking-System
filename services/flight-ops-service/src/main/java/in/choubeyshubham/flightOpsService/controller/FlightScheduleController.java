@@ -49,6 +49,9 @@ public class FlightScheduleController {
     public ResponseEntity<FlightScheduleResponse> updateFlightSchedule(
             @PathVariable Long id,
             @RequestBody FlightScheduleRequest request) throws Exception {
+
+
+
         return ResponseEntity.ok(flightScheduleService.updateFlightSchedule(id, request));
     }
 
