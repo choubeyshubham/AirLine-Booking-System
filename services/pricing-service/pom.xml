@@ -3,33 +3,27 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.1.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>in.choubeyshubham</groupId>
+        <artifactId>services</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+<!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
     </parent>
     <groupId>in.choubeyshubham</groupId>
     <artifactId>pricing-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>pricing-service</name>
-    <description>pricing-service</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
-    <properties>
-        <java.version>17</java.version>
-    </properties>
+    <description>Manage pricing-service</description>
+
+<!--    <properties>-->
+<!--        <java.version>17</java.version>-->
+<!--    </properties>-->
     <dependencies>
+        <dependency>
+            <groupId>in.choubeyshubham</groupId>
+            <artifactId>common-lib</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -65,6 +59,7 @@
             <artifactId>spring-boot-starter-webmvc-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -83,14 +78,14 @@
                         <goals>
                             <goal>compile</goal>
                         </goals>
-                        <configuration>
-                            <annotationProcessorPaths>
-                                <path>
-                                    <groupId>org.projectlombok</groupId>
-                                    <artifactId>lombok</artifactId>
-                                </path>
-                            </annotationProcessorPaths>
-                        </configuration>
+<!--                        <configuration>-->
+<!--                            <annotationProcessorPaths>-->
+<!--                                <path>-->
+<!--                                    <groupId>org.projectlombok</groupId>-->
+<!--                                    <artifactId>lombok</artifactId>-->
+<!--                                </path>-->
+<!--                            </annotationProcessorPaths>-->
+<!--                        </configuration>-->
                     </execution>
                     <execution>
                         <id>default-testCompile</id>
@@ -98,14 +93,14 @@
                         <goals>
                             <goal>testCompile</goal>
                         </goals>
-                        <configuration>
-                            <annotationProcessorPaths>
-                                <path>
-                                    <groupId>org.projectlombok</groupId>
-                                    <artifactId>lombok</artifactId>
-                                </path>
-                            </annotationProcessorPaths>
-                        </configuration>
+<!--                        <configuration>-->
+<!--                            <annotationProcessorPaths>-->
+<!--                                <path>-->
+<!--                                    <groupId>org.projectlombok</groupId>-->
+<!--                                    <artifactId>lombok</artifactId>-->
+<!--                                </path>-->
+<!--                            </annotationProcessorPaths>-->
+<!--                        </configuration>-->
                     </execution>
                 </executions>
             </plugin>

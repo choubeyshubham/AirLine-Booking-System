@@ -21,4 +21,4 @@ spring:
         format_sql: true
 
 server:
-  port: 5005
+  port: 5002
