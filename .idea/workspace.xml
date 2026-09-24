@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f43c1c1-5195-46a9-adab-6f6bd8d445b0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/airline-core-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/services/airline-core-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/flight-ops-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/services/flight-ops-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/location-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/services/location-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/pricing-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pricing-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/pricing-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pricing-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/pricing-service/src/main/java/in/choubeyshubham/pricingservice/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/pricing-service/src/main/java/in/choubeyshubham/pricingservice/controller/HomeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="DatabaseLocalColorSettings">
     <colors>
@@ -54,23 +51,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0780919316918502" />
-      <entry key="MS500" value="1.9483164950433376" />
-      <entry key="S2" value="2.6498879794893733" />
-      <entry key="S5" value="2.850941305828946" />
-      <entry key="S10" value="2.9238746401011317" />
-      <entry key="S30" value="2.974261036611513" />
-      <entry key="S60" value="2.9870844551329347" />
-      <entry key="M2" value="2.994092141488782" />
-      <entry key="M5" value="3.7642311258234136" />
-      <entry key="M10" value="11.52885994548763" />
-      <entry key="M15" value="22.046066023647374" />
-      <entry key="M30" value="45.5346857744401" />
-      <entry key="H1" value="66.56639403143288" />
-      <entry key="H2" value="80.72916315541651" />
-      <entry key="H4" value="91.5486171150112" />
-      <entry key="D1" value="538.8657339399363" />
-      <entry key="W1" value="1715.9719539450607" />
+      <entry key="MS100" value="1.4738884402263437" />
+      <entry key="MS500" value="4.539653204587305" />
+      <entry key="S2" value="13.199715272807676" />
+      <entry key="S5" value="22.779945991483647" />
+      <entry key="S10" value="29.45094675604982" />
+      <entry key="S30" value="36.447014555394894" />
+      <entry key="S60" value="39.15020635747834" />
+      <entry key="M2" value="40.874993933898004" />
+      <entry key="M5" value="42.739513942597185" />
+      <entry key="M10" value="50.37719350920924" />
+      <entry key="M15" value="60.696147212725265" />
+      <entry key="M30" value="84.20205330855697" />
+      <entry key="H1" value="105.60298267606025" />
+      <entry key="H2" value="120.14694433387743" />
+      <entry key="H4" value="131.2191756724439" />
+      <entry key="D1" value="578.5496490889633" />
+      <entry key="W1" value="1755.8286090099364" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -81,34 +78,34 @@
       <entry key="S30" value="0.0" />
       <entry key="S60" value="0.0" />
       <entry key="M2" value="0.0" />
-      <entry key="M5" value="4.564866271486295E-134" />
-      <entry key="M10" value="6.036054866067483E-67" />
-      <entry key="M15" value="1.4288830820231835E-44" />
-      <entry key="M30" value="3.5374053625334465E-22" />
-      <entry key="H1" value="8.07305725798016E-11" />
-      <entry key="H2" value="6.44556051572936E-5" />
-      <entry key="H4" value="0.07757160579425348" />
-      <entry key="D1" value="91.81339362631533" />
-      <entry key="W1" value="629.8181959834769" />
+      <entry key="M5" value="3.8583283657050597E-134" />
+      <entry key="M10" value="5.5493068768953155E-67" />
+      <entry key="M15" value="1.3509949834035432E-44" />
+      <entry key="M30" value="3.439642852514243E-22" />
+      <entry key="H1" value="7.960718980466285E-11" />
+      <entry key="H2" value="6.400557751313908E-5" />
+      <entry key="H4" value="0.0773003298153184" />
+      <entry key="D1" value="91.75980198443688" />
+      <entry key="W1" value="629.76566484006" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9008412911066151" />
-      <entry key="MS500" value="1.869539994379339" />
-      <entry key="S2" value="2.622023423802745" />
-      <entry key="S5" value="2.838870667944674" />
-      <entry key="S10" value="2.917672044467415" />
-      <entry key="S30" value="2.972155027376261" />
-      <entry key="S60" value="2.9860265570061864" />
-      <entry key="M2" value="2.993561741025901" />
-      <entry key="M5" value="3.763897647933564" />
-      <entry key="M10" value="11.528080857102907" />
-      <entry key="M15" value="22.04499407260551" />
-      <entry key="M30" value="45.53353312428612" />
-      <entry key="H1" value="66.56554174110198" />
-      <entry key="H2" value="80.72870861402288" />
-      <entry key="H4" value="91.62588675872615" />
-      <entry key="D1" value="630.6770978387776" />
-      <entry key="W1" value="2345.7884195153406" />
+      <entry key="MS100" value="1.3707572559482064" />
+      <entry key="MS500" value="4.483118878559504" />
+      <entry key="S2" value="13.158452345836276" />
+      <entry key="S5" value="22.74701322626041" />
+      <entry key="S10" value="29.42746797858661" />
+      <entry key="S30" value="36.4363139072041" />
+      <entry key="S60" value="39.14419660174072" />
+      <entry key="M2" value="40.871761149322325" />
+      <entry key="M5" value="42.73805136815194" />
+      <entry key="M10" value="50.37588230650898" />
+      <entry key="M15" value="60.69473604095843" />
+      <entry key="M30" value="84.20073317298704" />
+      <entry key="H1" value="105.60204244603977" />
+      <entry key="H2" value="120.1464430340445" />
+      <entry key="H4" value="131.2961501220753" />
+      <entry key="D1" value="670.3074183672102" />
+      <entry key="W1" value="2385.5925429863205" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -160,7 +157,8 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "typescript.add.unambiguous.imports.on.the.fly": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -191,6 +189,7 @@
             <map>
               <entry key="AirlineCoreServiceApplication" value="STOPPED" />
               <entry key="FlightOpsServiceApplication" value="STOPPED" />
+              <entry key="PricingServiceApplication" value="STOPPED" />
               <entry key="UserServiceApplication" value="STOPPED" />
             </map>
           </value>
@@ -304,7 +303,7 @@
       <workItem from="1789880122621" duration="2075000" />
       <workItem from="1790003467434" duration="366000" />
       <workItem from="1790003925187" duration="156000" />
-      <workItem from="1790245246265" duration="4211000" />
+      <workItem from="1790245246265" duration="5097000" />
     </task>
     <servers />
   </component>
