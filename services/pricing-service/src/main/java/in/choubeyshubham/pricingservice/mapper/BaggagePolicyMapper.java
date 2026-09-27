@@ -1,6 +1,7 @@
 package in.choubeyshubham.pricingservice.mapper;
 
 
+import in.choubeyshubham.payload.request.BaggagePolicyRequest;
 import in.choubeyshubham.payload.response.BaggagePolicyResponse;
 import in.choubeyshubham.pricingservice.model.BaggagePolicy;
 import in.choubeyshubham.pricingservice.model.Fare;
