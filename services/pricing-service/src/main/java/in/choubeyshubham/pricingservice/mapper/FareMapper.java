@@ -1,6 +1,7 @@
 package in.choubeyshubham.pricingservice.mapper;
 
 
+import in.choubeyshubham.embeddable.*;
 import in.choubeyshubham.payload.request.FareRequest;
 import in.choubeyshubham.payload.response.FareResponse;
 import in.choubeyshubham.pricingservice.model.Fare;

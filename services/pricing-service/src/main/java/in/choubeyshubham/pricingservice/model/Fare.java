@@ -1,6 +1,8 @@
 package in.choubeyshubham.pricingservice.model;
 
 
+import in.choubeyshubham.embeddable.*;
+import in.choubeyshubham.enums.CabinClassType;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
