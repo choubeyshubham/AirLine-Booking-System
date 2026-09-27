@@ -1,6 +1,7 @@
 package in.choubeyshubham.pricingservice.service;
 
 
+import in.choubeyshubham.payload.request.FareRequest;
 import in.choubeyshubham.payload.response.FareResponse;
 import in.choubeyshubham.pricingservice.model.Fare;
 

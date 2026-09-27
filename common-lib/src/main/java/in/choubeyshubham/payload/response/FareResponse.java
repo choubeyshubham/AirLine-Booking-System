@@ -1,5 +1,6 @@
 package in.choubeyshubham.payload.response;
 
+import in.choubeyshubham.enums.CabinClassType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
