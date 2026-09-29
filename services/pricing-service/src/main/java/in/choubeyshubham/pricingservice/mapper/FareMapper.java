@@ -16,7 +16,7 @@ public class FareMapper {
             calculatedPrice=request.getBaseFare()+
                     request.getTaxesAndFees()+
                     request.getAirlineFees();
-        };
+        }
 
         SeatBenefits seatBenefits=SeatBenefits.builder()
                 .extraSeatSpace(bool(request.getExtraSeatSpace()))
@@ -87,31 +87,31 @@ public class FareMapper {
                 .fareRulesId(fare.getFareRules() != null ? fare.getFareRules().getId() : null)
 
                 // Seat benefits
-                .extraSeatSpace(fare.getSeatBenefits() != null ? fare.getSeatBenefits().getExtraSeatSpace() : false)
-                .preferredSeatChoice(fare.getSeatBenefits() != null ? fare.getSeatBenefits().getPreferredSeatChoice() : false)
-                .advanceSeatSelection(fare.getSeatBenefits() != null ? fare.getSeatBenefits().getAdvanceSeatSelection() : false)
-                .guaranteedSeatTogether(fare.getSeatBenefits() != null ? fare.getSeatBenefits().getGuaranteedSeatTogether() : false)
+                .extraSeatSpace(fare.getSeatBenefits() != null && fare.getSeatBenefits().getExtraSeatSpace())
+                .preferredSeatChoice(fare.getSeatBenefits() != null && fare.getSeatBenefits().getPreferredSeatChoice())
+                .advanceSeatSelection(fare.getSeatBenefits() != null && fare.getSeatBenefits().getAdvanceSeatSelection())
+                .guaranteedSeatTogether(fare.getSeatBenefits() != null && fare.getSeatBenefits().getGuaranteedSeatTogether())
 
                 // Boarding benefits
-                .priorityBoarding(fare.getBoardingBenefits() != null ? fare.getBoardingBenefits().getPriorityBoarding() : false)
-                .priorityCheckin(fare.getBoardingBenefits() != null ? fare.getBoardingBenefits().getPriorityCheckin() : false)
-                .fastTrackSecurity(fare.getBoardingBenefits() != null ? fare.getBoardingBenefits().getFastTrackSecurity() : false)
+                .priorityBoarding(fare.getBoardingBenefits() != null && fare.getBoardingBenefits().getPriorityBoarding())
+                .priorityCheckin(fare.getBoardingBenefits() != null && fare.getBoardingBenefits().getPriorityCheckin())
+                .fastTrackSecurity(fare.getBoardingBenefits() != null && fare.getBoardingBenefits().getFastTrackSecurity())
 
                 // In-flight benefits
-                .complimentaryMeals(fare.getInFlightBenefits() != null ? fare.getInFlightBenefits().getComplimentaryMeals() : false)
-                .premiumMealChoice(fare.getInFlightBenefits() != null ? fare.getInFlightBenefits().getPremiumMealChoice() : false)
-                .inFlightInternet(fare.getInFlightBenefits() != null ? fare.getInFlightBenefits().getInFlightInternet() : false)
-                .inFlightEntertainment(fare.getInFlightBenefits() != null ? fare.getInFlightBenefits().getInFlightEntertainment() : false)
-                .complimentaryBeverages(fare.getInFlightBenefits() != null ? fare.getInFlightBenefits().getComplimentaryBeverages() : false)
+                .complimentaryMeals(fare.getInFlightBenefits() != null && fare.getInFlightBenefits().getComplimentaryMeals())
+                .premiumMealChoice(fare.getInFlightBenefits() != null && fare.getInFlightBenefits().getPremiumMealChoice())
+                .inFlightInternet(fare.getInFlightBenefits() != null && fare.getInFlightBenefits().getInFlightInternet())
+                .inFlightEntertainment(fare.getInFlightBenefits() != null && fare.getInFlightBenefits().getInFlightEntertainment())
+                .complimentaryBeverages(fare.getInFlightBenefits() != null && fare.getInFlightBenefits().getComplimentaryBeverages())
 
                 // Flexibility benefits
-                .freeDateChange(fare.getFlexibilityBenefits() != null ? fare.getFlexibilityBenefits().getFreeDateChange() : false)
-                .partialRefund(fare.getFlexibilityBenefits() != null ? fare.getFlexibilityBenefits().getPartialRefund() : false)
-                .fullRefund(fare.getFlexibilityBenefits() != null ? fare.getFlexibilityBenefits().getFullRefund() : false)
+                .freeDateChange(fare.getFlexibilityBenefits() != null && fare.getFlexibilityBenefits().getFreeDateChange())
+                .partialRefund(fare.getFlexibilityBenefits() != null && fare.getFlexibilityBenefits().getPartialRefund())
+                .fullRefund(fare.getFlexibilityBenefits() != null && fare.getFlexibilityBenefits().getFullRefund())
 
                 // Premium service benefits
-                .loungeAccess(fare.getPremiumServiceBenefits() != null ? fare.getPremiumServiceBenefits().getLoungeAccess() : false)
-                .airportTransfer(fare.getPremiumServiceBenefits() != null ? fare.getPremiumServiceBenefits().getAirportTransfer() : false)
+                .loungeAccess(fare.getPremiumServiceBenefits() != null && fare.getPremiumServiceBenefits().getLoungeAccess())
+                .airportTransfer(fare.getPremiumServiceBenefits() != null && fare.getPremiumServiceBenefits().getAirportTransfer())
 
                 // Nested responses
 
@@ -167,6 +167,6 @@ public class FareMapper {
     }
 
     private static boolean bool(Boolean value){
-        return value!=null?value:false;
+        return value != null && value;
     }
 }

@@ -1,6 +1,7 @@
 package in.choubeyshubham.pricingservice.mapper;
 
 
+import in.choubeyshubham.payload.request.FareRulesRequest;
 import in.choubeyshubham.payload.response.FareRulesResponse;
 import in.choubeyshubham.pricingservice.model.Fare;
 import in.choubeyshubham.pricingservice.model.FareRules;
@@ -19,7 +20,7 @@ public class FareRuleMapper {
                 .cancellationFee(request.getCancellationFee())
                 .refundDeadlineDays(request.getRefundDeadlineDays())
                 .changeDeadlineHours(request.getChangeDeadlineHours())
-                .isChangeable(request.getIsChangeable() != null ? request.getIsChangeable() : false)
+                .isChangeable(request.getIsChangeable() != null && request.getIsChangeable())
                 .build();
 
     }
