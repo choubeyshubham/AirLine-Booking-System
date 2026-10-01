@@ -2,8 +2,7 @@ package in.choubeyshubham.embeddable;
 
 
 import jakarta.persistence.Embeddable;
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 
 @Embeddable
 @Getter
