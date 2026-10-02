@@ -1,5 +1,6 @@
 package in.choubeyshubham.seatservice.model;
 
+import in.choubeyshubham.enums.SeatType;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
