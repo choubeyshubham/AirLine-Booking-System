@@ -68,7 +68,7 @@ public class CabinClassServiceImpl implements CabinClassService {
 //        request => BC
 
 //        existing cabin code => BC
-//        request => BC, busunes
+//        request => BC, business
 
         if(cabinClassRepository.existsByCodeAndAircraftIdAndIdNot(
                 cabinClassRequest.getCode().toUpperCase(),
