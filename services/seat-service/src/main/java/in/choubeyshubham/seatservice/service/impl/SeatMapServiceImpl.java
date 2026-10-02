@@ -4,6 +4,7 @@ package in.choubeyshubham.seatservice.service.impl;
 import in.choubeyshubham.payload.request.SeatMapRequest;
 import in.choubeyshubham.payload.response.AirlineResponse;
 import in.choubeyshubham.payload.response.SeatMapResponse;
+import in.choubeyshubham.seatservice.client.AirlineClient;
 import in.choubeyshubham.seatservice.mapper.SeatMapMapper;
 import in.choubeyshubham.seatservice.model.CabinClass;
 import in.choubeyshubham.seatservice.model.SeatMap;
@@ -20,21 +21,18 @@ public class SeatMapServiceImpl implements SeatMapService {
 
     private final CabinClassRepository cabinClassRepository;
     private final SeatMapRepository seatMapRepository;
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     private final SeatService seatService;
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     private final AirlineClient airlineClient;
 
     @Override
     public SeatMapResponse createSeatMap(Long userId, SeatMapRequest request) throws Exception {
 
         AirlineResponse airlineResponse=airlineClient.getAirlineByOwner(userId);
-        CabinClass cabinClass=cabinClassRepository.findById(request.getCabinClassId())
-                .orElseThrow(
-                        ()->new Exception("cabin class not found with given id")
-                );
+        CabinClass cabinClass=cabinClassRepository.findById(request.getCabinClassId()).orElseThrow(()->new Exception("cabin class not found with given id"));
 
-        if(seatMapRepository.existsByAirlineIdAndCabinClassIdAndName(
-                airlineResponse.getId(), request.getCabinClassId(), request.getName()
-        )){
+        if(seatMapRepository.existsByAirlineIdAndCabinClassIdAndName(airlineResponse.getId(), request.getCabinClassId(), request.getName())){
             throw new Exception("cabin class already exists with given name");
         }
 
