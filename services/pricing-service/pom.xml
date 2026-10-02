@@ -3,15 +3,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>in.choubeyshubham</groupId>
-        <artifactId>services</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-<!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>4.1.1</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>in.choubeyshubham</groupId>
     <artifactId>pricing-service</artifactId>
     <name>pricing-service</name>
     <description>Manage pricing-service</description>
+
+
 
 <!--    <properties>-->
 <!--        <java.version>17</java.version>-->
