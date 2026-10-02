@@ -1,12 +1,8 @@
 package in.choubeyshubham.seatservice.repository;
 
-import in.choubeyshubham.enums.SeatAvailabilityStatus;
+import in.choubeyshubham.seatservice.model.SeatInstance;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
+public interface SeatInstanceRepository extends JpaRepository<SeatInstance, Long> {
 
-public interface SeatInstanceService {
-
-    Double calculateSeatPrice(List<Long> seatInstanceIds);
-    SeatInstanceResponse updateSeatInstanceStatus(Long seatInstanceId,
-                                                  SeatAvailabilityStatus status);
 }

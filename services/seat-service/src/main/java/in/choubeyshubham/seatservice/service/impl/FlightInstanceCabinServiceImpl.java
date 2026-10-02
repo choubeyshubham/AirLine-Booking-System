@@ -9,6 +9,7 @@ import in.choubeyshubham.seatservice.model.SeatInstance;
 import in.choubeyshubham.seatservice.model.SeatMap;
 import in.choubeyshubham.seatservice.repository.CabinClassRepository;
 import in.choubeyshubham.seatservice.repository.FlightInstanceCabinRepository;
+import in.choubeyshubham.seatservice.repository.SeatInstanceRepository;
 import in.choubeyshubham.seatservice.repository.SeatMapRepository;
 import in.choubeyshubham.seatservice.service.FlightInstanceCabinService;
 import jakarta.persistence.EntityNotFoundException;
