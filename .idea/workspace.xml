@@ -7,6 +7,10 @@
     <list default="true" id="3f43c1c1-5195-46a9-adab-6f6bd8d445b0" name="Changes" comment="Misc changes added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/seat-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/seat-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/client/AirlineClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/client/AirlineClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/model/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/model/Seat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/model/SeatMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/model/SeatMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/service/SeatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/service/SeatService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/service/impl/SeatMapServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/service/impl/SeatMapServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,23 +69,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.29355577593698" />
-      <entry key="MS500" value="3.2452067609074" />
-      <entry key="S2" value="11.637840366326529" />
-      <entry key="S5" value="22.572609454474463" />
-      <entry key="S10" value="30.41019286808989" />
-      <entry key="S30" value="38.09406924375044" />
-      <entry key="S60" value="40.443512898943666" />
-      <entry key="M2" value="41.69528906635952" />
-      <entry key="M5" value="42.92380478849741" />
-      <entry key="M10" value="46.7272865887547" />
-      <entry key="M15" value="51.81144778646234" />
-      <entry key="M30" value="72.05395101391532" />
-      <entry key="H1" value="113.34879698158286" />
-      <entry key="H2" value="162.6334176993639" />
-      <entry key="H4" value="224.76210645838256" />
-      <entry key="D1" value="827.152645903599" />
-      <entry key="W1" value="2257.0002178273458" />
+      <entry key="MS100" value="1.0438889023668123" />
+      <entry key="MS500" value="1.5351443492133119" />
+      <entry key="S2" value="1.8552985504209412" />
+      <entry key="S5" value="1.9393925127325873" />
+      <entry key="S10" value="1.9692226332131266" />
+      <entry key="S30" value="1.9896337941680229" />
+      <entry key="S60" value="1.994971551671418" />
+      <entry key="M2" value="2.086960921979455" />
+      <entry key="M5" value="7.14277181584149" />
+      <entry key="M10" value="23.150892180627398" />
+      <entry key="M15" value="37.44408550396382" />
+      <entry key="M30" value="70.80434858043225" />
+      <entry key="H1" value="121.34395207412538" />
+      <entry key="H2" value="179.82556690259784" />
+      <entry key="H4" value="249.03347551932677" />
+      <entry key="D1" value="857.8292988573867" />
+      <entry key="W1" value="2292.828301322164" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -90,36 +94,36 @@
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
-      <entry key="S60" value="6.97E-322" />
-      <entry key="M2" value="2.5701572137105248E-161" />
-      <entry key="M5" value="5.807428556623522E-65" />
-      <entry key="M10" value="7.620648631595341E-33" />
-      <entry key="M15" value="3.8725285233113476E-22" />
-      <entry key="M30" value="1.9678741126686518E-11" />
-      <entry key="H1" value="4.436072714507732E-6" />
-      <entry key="H2" value="0.002106298346518417" />
-      <entry key="H4" value="0.04894427212495476" />
-      <entry key="D1" value="54.140323101599215" />
-      <entry key="W1" value="584.0471805646667" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="2.3988604411483036E-164" />
+      <entry key="M5" value="3.5645276926509385E-66" />
+      <entry key="M10" value="1.88799568131153E-33" />
+      <entry key="M15" value="1.5275683950222248E-22" />
+      <entry key="M30" value="1.2359483787854005E-11" />
+      <entry key="H1" value="3.5156057499284792E-6" />
+      <entry key="H2" value="0.0018750836273617086" />
+      <entry key="H4" value="0.046179821694249806" />
+      <entry key="D1" value="53.61824228482372" />
+      <entry key="W1" value="583.2392599968013" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.2255640850588438" />
-      <entry key="MS500" value="3.207297877174561" />
-      <entry key="S2" value="11.5981319782601" />
-      <entry key="S5" value="22.537473797825275" />
-      <entry key="S10" value="30.38490402857746" />
-      <entry key="S30" value="38.08296684299721" />
-      <entry key="S60" value="40.437541221070035" />
-      <entry key="M2" value="41.69219022447208" />
-      <entry key="M5" value="42.92252418148275" />
-      <entry key="M10" value="46.72659073727042" />
-      <entry key="M15" value="51.81093442761322" />
-      <entry key="M30" value="72.0535918165035" />
-      <entry key="H1" value="113.3485132764427" />
-      <entry key="H2" value="162.6353125001715" />
-      <entry key="H4" value="224.8108860880776" />
-      <entry key="D1" value="881.2917116016459" />
-      <entry key="W1" value="2841.045781961159" />
+      <entry key="MS100" value="0.8748856760741609" />
+      <entry key="MS500" value="1.435781862668218" />
+      <entry key="S2" value="1.8187972867799638" />
+      <entry key="S5" value="1.923533123939018" />
+      <entry key="S10" value="1.9610681989845222" />
+      <entry key="S30" value="1.9868642487186838" />
+      <entry key="S60" value="1.9935802388104455" />
+      <entry key="M2" value="2.0862570669208296" />
+      <entry key="M5" value="7.142335731020196" />
+      <entry key="M10" value="23.150428460183026" />
+      <entry key="M15" value="37.443630674748626" />
+      <entry key="M30" value="70.80395094195579" />
+      <entry key="H1" value="121.3436251599189" />
+      <entry key="H2" value="179.82719790894106" />
+      <entry key="H4" value="249.079470803981" />
+      <entry key="D1" value="911.4462908086475" />
+      <entry key="W1" value="2876.0659463971824" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -333,7 +337,7 @@
       <workItem from="1790650487597" duration="4221000" />
       <workItem from="1790855208467" duration="7004000" />
       <workItem from="1790907813596" duration="8472000" />
-      <workItem from="1790916471446" duration="1971000" />
+      <workItem from="1790916471446" duration="11192000" />
     </task>
     <servers />
   </component>
@@ -356,6 +360,16 @@
     <MESSAGE value="FareRulesResponse BaggagePolicyResponse and CabinClassType added" />
     <MESSAGE value="Misc changes added" />
     <option name="LAST_COMMIT_MESSAGE" value="Misc changes added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

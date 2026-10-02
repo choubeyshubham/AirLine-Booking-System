@@ -1,5 +1,6 @@
 package in.choubeyshubham.seatservice.service;
 
+import in.choubeyshubham.payload.request.SeatRequest;
 import in.choubeyshubham.payload.response.SeatResponse;
 
 import java.util.List;

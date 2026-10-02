@@ -33,10 +33,7 @@ public class SeatMap {
     private Long airlineId;
 
 
-    @OneToMany(mappedBy = "seatMap",
-            cascade = CascadeType.ALL,
-            orphanRemoval = true
-    )
+    @OneToMany(mappedBy = "seatMap", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Seat> seats;
 
     @OneToOne

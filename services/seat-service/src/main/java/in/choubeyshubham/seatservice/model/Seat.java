@@ -84,7 +84,7 @@ public class Seat {
     private Long version;
 
     public Double getTotalPrice(){
-        Double total=basePrice!=null?basePrice:0;
+        double total=basePrice!=null?basePrice:0;
         if(premiumSuperCharge!=null){
             total+=premiumSuperCharge;
         }
