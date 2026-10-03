@@ -30,10 +30,9 @@ public class CabinClassServiceImpl implements CabinClassService {
             throw new Exception("cabin class with code already exist");
         }
         CabinClass cabinClass= CabinClassMapper.toEntity(request);
-
         CabinClass savedCabin=cabinClassRepository.save(cabinClass);
 
-        return CabinClassMapper.toResponse(savedCabin,null);
+        return CabinClassMapper.toResponse(savedCabin,cabinClass.getSeatMap());
     }
 
     @Override

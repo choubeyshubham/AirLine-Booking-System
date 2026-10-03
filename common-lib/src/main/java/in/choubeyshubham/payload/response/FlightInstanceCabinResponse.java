@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Builder
@@ -27,6 +28,6 @@ public class FlightInstanceCabinResponse {
     private Integer bookedSeats;
     private Integer availableSeats;
     private Boolean isActive;
-    private Boolean canBook;
+
 
 }

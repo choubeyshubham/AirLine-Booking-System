@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f43c1c1-5195-46a9-adab-6f6bd8d445b0" name="Changes" comment="Misc changes added">
-      <change beforePath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/repository/SeatInstanceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/repository/SeatInstanceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/src/main/java/in/choubeyshubham/payload/response/FlightInstanceCabinResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/src/main/java/in/choubeyshubham/payload/response/FlightInstanceCabinResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/mapper/FlightInstanceCabinMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/mapper/FlightInstanceCabinMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/mapper/SeatMapMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/mapper/SeatMapMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/repository/FlightInstanceCabinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/repository/FlightInstanceCabinRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/service/FlightInstanceCabinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/service/FlightInstanceCabinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/service/impl/CabinClassServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/service/impl/CabinClassServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/service/impl/FlightInstanceCabinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/seat-service/src/main/java/in/choubeyshubham/seatservice/service/impl/FlightInstanceCabinServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +28,7 @@
     </colors>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="98" />
+    <option name="cachedIndexableFilesCount" value="248" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -64,61 +70,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0901194716474707" />
-      <entry key="MS500" value="3.3111572427600127" />
-      <entry key="S2" value="7.290540192451595" />
-      <entry key="S5" value="12.220963300805535" />
-      <entry key="S10" value="21.367104761660798" />
-      <entry key="S30" value="39.44761395594353" />
-      <entry key="S60" value="48.334765990539296" />
-      <entry key="M2" value="54.327568372355664" />
-      <entry key="M5" value="59.52378846910265" />
-      <entry key="M10" value="68.3460515515114" />
-      <entry key="M15" value="77.94235531346104" />
-      <entry key="M30" value="97.7562585201968" />
-      <entry key="H1" value="118.09420539366893" />
-      <entry key="H2" value="156.33742973413368" />
-      <entry key="H4" value="234.8938266919564" />
-      <entry key="D1" value="878.1000445382418" />
-      <entry key="W1" value="2383.8992140491805" />
+      <entry key="MS100" value="1.1074626212308503" />
+      <entry key="MS500" value="2.9194029080842037" />
+      <entry key="S2" value="6.645171486266804" />
+      <entry key="S5" value="8.417204705771587" />
+      <entry key="S10" value="9.161073533873465" />
+      <entry key="S30" value="9.710241769916644" />
+      <entry key="S60" value="9.94965295969854" />
+      <entry key="M2" value="11.347590594400883" />
+      <entry key="M5" value="23.841994019581026" />
+      <entry key="M10" value="45.160726520744674" />
+      <entry key="M15" value="59.166087493289204" />
+      <entry key="M30" value="85.23986900225148" />
+      <entry key="H1" value="126.89571222391338" />
+      <entry key="H2" value="193.91557408094732" />
+      <entry key="H4" value="296.81783617526133" />
+      <entry key="D1" value="978.6415630760976" />
+      <entry key="W1" value="2522.9970305611055" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="2.0383120391878E-210" />
-      <entry key="M5" value="1.3295610011580652E-84" />
-      <entry key="M10" value="1.153065913622501E-42" />
-      <entry key="M15" value="1.0996034386389575E-28" />
-      <entry key="M30" value="1.048619777917136E-14" />
-      <entry key="H1" value="1.0240213757575787E-7" />
-      <entry key="H2" value="3.2001848864068335E-4" />
-      <entry key="H4" value="0.019077851579866738" />
-      <entry key="D1" value="46.27276399452763" />
-      <entry key="W1" value="571.0915463967489" />
+      <entry key="S2" value="4.1850614506466094E-164" />
+      <entry key="S5" value="8.179610447568136E-66" />
+      <entry key="S10" value="5.498952822281594E-33" />
+      <entry key="S30" value="5.0152049082765336E-11" />
+      <entry key="S60" value="1.7539411530062478E-5" />
+      <entry key="M2" value="0.010862889404255092" />
+      <entry key="M5" value="0.5238661222144744" />
+      <entry key="M10" value="1.9132861994766523" />
+      <entry key="M15" value="2.9475946228269643" />
+      <entry key="M30" value="4.541928737574486" />
+      <entry key="H1" value="5.638434099738935" />
+      <entry key="H2" value="6.2825405009467" />
+      <entry key="H4" value="6.6441194328281385" />
+      <entry key="D1" value="50.135306101943236" />
+      <entry key="W1" value="572.5005239176489" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.0027666923570233" />
-      <entry key="MS500" value="3.2475848850081297" />
-      <entry key="S2" value="7.253418448729446" />
-      <entry key="S5" value="12.196489323870356" />
-      <entry key="S10" value="21.346052038252502" />
-      <entry key="S30" value="39.43447618139189" />
-      <entry key="S60" value="48.32648260731567" />
-      <entry key="M2" value="54.32278789343268" />
-      <entry key="M5" value="59.521658387572714" />
-      <entry key="M10" value="68.3448651263372" />
-      <entry key="M15" value="77.94148575324469" />
-      <entry key="M30" value="97.75574478173493" />
-      <entry key="H1" value="118.09390599532597" />
-      <entry key="H2" value="156.33755229470208" />
-      <entry key="H4" value="234.91274729273368" />
-      <entry key="D1" value="924.3717155167541" />
-      <entry key="W1" value="2954.989177151555" />
+      <entry key="MS100" value="1.0474780442278095" />
+      <entry key="MS500" value="2.8827054523062348" />
+      <entry key="S2" value="6.620055856236975" />
+      <entry key="S5" value="8.403807671854539" />
+      <entry key="S10" value="9.153652110827393" />
+      <entry key="S30" value="9.707588080149518" />
+      <entry key="S60" value="9.948308021505714" />
+      <entry key="M2" value="11.357356275384568" />
+      <entry key="M5" value="24.358834048244642" />
+      <entry key="M10" value="47.06171018717593" />
+      <entry key="M15" value="62.101121750741974" />
+      <entry key="M30" value="89.77208843268751" />
+      <entry key="H1" value="132.52799702681995" />
+      <entry key="H2" value="200.19458115777053" />
+      <entry key="H4" value="303.4600103949808" />
+      <entry key="D1" value="1028.7755235977281" />
+      <entry key="W1" value="3095.4959397242446" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -136,45 +142,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AirlineCoreServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.FlightOpsServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.LocationServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PricingServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SeatServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/shubh/IdeaProjects/AirLine Booking System/services/user-service/src/main/java/in/choubeyshubham/userservice/service&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AcpAgentsConfigurable&quot;,
-    &quot;typescript.add.unambiguous.imports.on.the.fly&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.AirlineCoreServiceApplication.executor": "Run",
+    "Spring Boot.FlightOpsServiceApplication.executor": "Run",
+    "Spring Boot.LocationServiceApplication.executor": "Run",
+    "Spring Boot.PricingServiceApplication.executor": "Run",
+    "Spring Boot.SeatServiceApplication.executor": "Run",
+    "Spring Boot.UserServiceApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/shubh/IdeaProjects/AirLine Booking System/services/user-service/src/main/java/in/choubeyshubham/userservice/service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable",
+    "typescript.add.unambiguous.imports.on.the.fly": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="in.choubeyshubham.userservice.service.Impl" />
@@ -332,7 +338,9 @@
       <workItem from="1790650487597" duration="4221000" />
       <workItem from="1790855208467" duration="7004000" />
       <workItem from="1790907813596" duration="8472000" />
-      <workItem from="1790916471446" duration="13404000" />
+      <workItem from="1790916471446" duration="20309000" />
+      <workItem from="1790947327011" duration="101000" />
+      <workItem from="1790947449573" duration="1229000" />
     </task>
     <servers />
   </component>
