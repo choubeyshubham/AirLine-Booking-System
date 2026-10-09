@@ -1,7 +1,6 @@
 package in.choubeyshubham.flightOpsService.service.Impl;
 
 
-import in.choubeyshubham.event.FlightInstanceCreatedEvent;
 import in.choubeyshubham.flightOpsService.client.AirlineClient;
 import in.choubeyshubham.flightOpsService.client.LocationClient;
 import in.choubeyshubham.flightOpsService.event.FlightInstanceEventProducer;

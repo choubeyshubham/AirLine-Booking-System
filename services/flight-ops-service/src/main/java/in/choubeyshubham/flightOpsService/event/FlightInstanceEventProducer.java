@@ -1,6 +1,5 @@
 package in.choubeyshubham.flightOpsService.event;
 
-import in.choubeyshubham.event.FlightInstanceCreatedEvent;
 import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;

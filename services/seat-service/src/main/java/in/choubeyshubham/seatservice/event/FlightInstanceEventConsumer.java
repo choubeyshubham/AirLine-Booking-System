@@ -2,7 +2,6 @@ package in.choubeyshubham.seatservice.event;
 
 import in.choubeyshubham.enums.SeatAvailabilityStatus;
 import in.choubeyshubham.enums.SeatType;
-import in.choubeyshubham.event.FlightInstanceCreatedEvent;
 import in.choubeyshubham.seatservice.model.CabinClass;
 import in.choubeyshubham.seatservice.model.FlightInstanceCabin;
 import in.choubeyshubham.seatservice.model.Seat;
