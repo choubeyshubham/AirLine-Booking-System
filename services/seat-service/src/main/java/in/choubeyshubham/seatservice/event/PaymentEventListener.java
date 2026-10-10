@@ -2,6 +2,7 @@ package in.choubeyshubham.seatservice.event;
 
 
 import in.choubeyshubham.enums.SeatAvailabilityStatus;
+import in.choubeyshubham.event.PaymentCompletedEvent;
 import in.choubeyshubham.payload.response.BookingResponse;
 import in.choubeyshubham.payload.response.SeatInstanceResponse;
 import in.choubeyshubham.seatservice.client.BookingClient;
