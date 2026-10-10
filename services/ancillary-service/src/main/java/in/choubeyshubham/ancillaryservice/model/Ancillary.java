@@ -1,6 +1,8 @@
 package in.choubeyshubham.ancillaryservice.model;
 
 
+import in.choubeyshubham.ancillaryservice.services.AncillaryMetadataConverter;
+import in.choubeyshubham.domain.AncillaryMetadata;
 import in.choubeyshubham.enums.AncillaryType;
 import jakarta.persistence.*;
 import lombok.*;
