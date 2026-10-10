@@ -13,6 +13,7 @@
         <module name="common-lib" />
         <module name="user-service" />
         <module name="seat-service" />
+        <module name="ancillary-service" />
         <module name="pricing-service" />
       </profile>
     </annotationProcessing>
@@ -21,6 +22,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="AirLine Booking System" options="-parameters" />
       <module name="Airline-Booking-System" options="-parameters" />
+      <module name="ancillary-service" options="-parameters" />
       <module name="cloud" options="-parameters" />
       <module name="common-lib" options="-parameters" />
       <module name="core" options="-parameters" />

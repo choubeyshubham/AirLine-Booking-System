@@ -37,10 +37,10 @@
         <module>user-service</module>
         <module>airline-core-service</module>
         <module>location-service</module>
-<!--        <module>seat-service</module>-->
+        <module>seat-service</module>
         <module>flight-ops-service</module>
-<!--        <module>pricing-service</module>-->
-<!--        <module>ancillary-service</module>-->
+        <module>pricing-service</module>
+        <module>ancillary-service</module>
 <!--        <module>booking-service</module>-->
 <!--        <module>subscription-service</module>-->
 <!--        <module>payment-service</module>-->

@@ -1,0 +1,28 @@
+
+
+
+spring:
+  application:
+    name: ancillary-service
+
+
+  cloud:
+    config:
+      enabled: false
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/airline_ancillary_db
+    username: shubham
+    password: shubham96
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update # Options: none, update, validate, create, create-drop
+    show-sql: true # Prints SQL queries in the console for debugging
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 5007
