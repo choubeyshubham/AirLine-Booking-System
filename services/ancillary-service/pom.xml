@@ -10,13 +10,14 @@
     </parent>
     <artifactId>ancillary-service</artifactId>
     <name>ancillary-service</name>
-    <description>ancillary-service</description>
+    <description>Ancillary Service manages add-on products such as meals, flight-specific ancillaries, and insurance coverage.</description>
 
 <!-- -->
 <!--    <properties>-->
 <!--        <java.version>17</java.version>-->
 <!--    </properties>-->
     <dependencies>
+
         <dependency>
             <groupId>in.choubeyshubham</groupId>
             <artifactId>common-lib</artifactId>

@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f43c1c1-5195-46a9-adab-6f6bd8d445b0" name="Changes" comment="Misc changes added">
-      <change afterPath="$PROJECT_DIR$/services/ancillary-service/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/ancillary-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/ancillary-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/ancillary-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/ancillary-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/ancillary-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/ancillary-service/src/main/java/in/choubeyshubham/ancillaryservice/AncillaryServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/ancillary-service/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/ancillary-service/src/test/java/in/choubeyshubham/ancillaryservice/AncillaryServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ancillary-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/ancillary-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,61 +64,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.000000000022115" />
-      <entry key="S30" value="1.0021416346488043" />
-      <entry key="S60" value="1.4374687507152875" />
-      <entry key="M2" value="7.60364841013459" />
-      <entry key="M5" value="35.044472390221614" />
-      <entry key="M10" value="59.906462406007435" />
-      <entry key="M15" value="71.73055322122437" />
-      <entry key="M30" value="85.93492257151318" />
-      <entry key="H1" value="94.07626208667655" />
-      <entry key="H2" value="98.43578345531758" />
-      <entry key="H4" value="100.69197252195112" />
-      <entry key="D1" value="202.1594251623202" />
-      <entry key="W1" value="1960.7962689390497" />
-    </decayedCancelled>
-    <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="5.9024650244984886E-297" />
-      <entry key="M10" value="2.0308904298670732E-148" />
-      <entry key="M15" value="6.60803181096349E-99" />
-      <entry key="M30" value="2.1505151211737075E-49" />
-      <entry key="H1" value="1.2269012283111224E-24" />
-      <entry key="H2" value="2.9306290021504356E-12" />
-      <entry key="H4" value="4.537850706785841E-6" />
-      <entry key="D1" value="4.704850194088706" />
-      <entry key="W1" value="408.2970034384046" />
+      <entry key="S2" value="2.426683711933035E-92" />
+      <entry key="S5" value="1.1636853234071207E-36" />
+      <entry key="S10" value="4.5303725054894155E-18" />
+      <entry key="S30" value="1.1624441317263086E-5" />
+      <entry key="S60" value="0.014827493094502762" />
+      <entry key="M2" value="0.5311426597436375" />
+      <entry key="M5" value="5.393971784275211" />
+      <entry key="M10" value="18.639906743909354" />
+      <entry key="M15" value="32.58739507501067" />
+      <entry key="M30" value="61.23945497363979" />
+      <entry key="H1" value="85.89635435106715" />
+      <entry key="H2" value="102.22192096842373" />
+      <entry key="H4" value="111.63594666143639" />
+      <entry key="D1" value="218.4747754095725" />
+      <entry key="W1" value="1976.1735856550965" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000000000027" />
+      <entry key="S2" value="1.0002285820916588" />
+      <entry key="S5" value="1.034963659407366" />
+      <entry key="S10" value="1.1869857197952989" />
+      <entry key="S30" value="1.5718333497793973" />
+      <entry key="S60" value="1.756196634334878" />
+      <entry key="M2" value="1.8695956729048726" />
+      <entry key="M5" value="1.9456424249847268" />
+      <entry key="M10" value="1.972441476380315" />
+      <entry key="M15" value="1.9815422146135275" />
+      <entry key="M30" value="1.9907281234594725" />
+      <entry key="H1" value="1.9953532656597215" />
+      <entry key="H2" value="1.9976739275257875" />
+      <entry key="H4" value="1.998840486602046" />
+      <entry key="D1" value="6.644369063230149" />
+      <entry key="W1" value="409.54543227985533" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8705505632961241" />
-      <entry key="MS500" value="0.9726549474122855" />
-      <entry key="S2" value="0.9930924954370359" />
-      <entry key="S5" value="0.9972312513520695" />
-      <entry key="S10" value="0.9986146661230937" />
-      <entry key="S30" value="1.0016785816517573" />
-      <entry key="S60" value="1.4371518505261114" />
-      <entry key="M2" value="7.602922381472036" />
-      <entry key="M5" value="35.04319234712473" />
-      <entry key="M10" value="59.90537670153056" />
-      <entry key="M15" value="71.7296883262558" />
-      <entry key="M30" value="85.93440543320516" />
-      <entry key="H1" value="94.07597925762184" />
-      <entry key="H2" value="98.43563554677445" />
-      <entry key="H4" value="100.69190142406775" />
-      <entry key="D1" value="206.86413486208173" />
-      <entry key="W1" value="2369.0921174294813" />
+      <entry key="MS100" value="1.7167030100842436E-5" />
+      <entry key="MS500" value="0.11141381198712146" />
+      <entry key="S2" value="0.5778353759137783" />
+      <entry key="S5" value="0.827285261898056" />
+      <entry key="S10" value="1.0520459707824186" />
+      <entry key="S30" value="1.5023790593744877" />
+      <entry key="S60" value="1.7303801651218362" />
+      <entry key="M2" value="2.3785387098209023" />
+      <entry key="M5" value="7.330055806472103" />
+      <entry key="M10" value="20.607236163127773" />
+      <entry key="M15" value="34.565339424530286" />
+      <entry key="M30" value="63.22820059432231" />
+      <entry key="H1" value="87.89063941537547" />
+      <entry key="H2" value="104.21903555832827" />
+      <entry key="H4" value="113.63450023047331" />
+      <entry key="D1" value="225.11896954198306" />
+      <entry key="W1" value="2385.7178599340946" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -148,50 +136,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AirlineCoreServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.FlightOpsServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.LocationServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PricingServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SeatServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/shubh/IdeaProjects/AirLine Booking System/services/user-service/src/main/java/in/choubeyshubham/userservice/service&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMThirdPartyAiProvidersConfigurable&quot;,
-    &quot;typescript.add.unambiguous.imports.on.the.fly&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.AirlineCoreServiceApplication.executor": "Run",
+    "Spring Boot.AncillaryServiceApplication.executor": "Run",
+    "Spring Boot.FlightOpsServiceApplication.executor": "Run",
+    "Spring Boot.LocationServiceApplication.executor": "Run",
+    "Spring Boot.PricingServiceApplication.executor": "Run",
+    "Spring Boot.SeatServiceApplication.executor": "Run",
+    "Spring Boot.UserServiceApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/shubh/IdeaProjects/AirLine Booking System/services/ancillary-service/src/main/java/in/choubeyshubham/ancillaryservice/controller",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable",
+    "typescript.add.unambiguous.imports.on.the.fly": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="in.choubeyshubham.userservice.service.Impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shubh\IdeaProjects\AirLine Booking System\services\ancillary-service\src\main\java\in\choubeyshubham\ancillaryservice\controller" />
       <recent name="C:\Users\shubh\IdeaProjects\AirLine Booking System\services\user-service\src\main\java\in\choubeyshubham\userservice\service" />
       <recent name="C:\Users\shubh\IdeaProjects\AirLine Booking System\services\user-service\src\main\java\in\choubeyshubham\userservice\repository" />
       <recent name="C:\Users\shubh\IdeaProjects\AirLine Booking System\services\user-service\src\main\java\in\choubeyshubham\userservice\mapper" />
@@ -213,6 +203,7 @@
           <value>
             <map>
               <entry key="AirlineCoreServiceApplication" value="STOPPED" />
+              <entry key="AncillaryServiceApplication" value="STOPPED" />
               <entry key="FlightOpsServiceApplication" value="STOPPED" />
               <entry key="LocationServiceApplication" value="STOPPED" />
               <entry key="PricingServiceApplication" value="STOPPED" />
@@ -224,7 +215,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SeatServiceApplication">
+  <component name="RunManager" selected="Spring Boot.AncillaryServiceApplication">
     <configuration name="AirlineCoreServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="core" />
@@ -360,7 +351,7 @@
       <workItem from="1791509532453" duration="251000" />
       <workItem from="1791509804983" duration="19000" />
       <workItem from="1791601031007" duration="673000" />
-      <workItem from="1791610932199" duration="2985000" />
+      <workItem from="1791610932199" duration="4298000" />
     </task>
     <servers />
   </component>
