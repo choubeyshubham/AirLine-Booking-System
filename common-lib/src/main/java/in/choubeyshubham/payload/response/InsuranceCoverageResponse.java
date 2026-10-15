@@ -1,6 +1,7 @@
 package in.choubeyshubham.payload.response;
 
 
+import in.choubeyshubham.enums.CoverageType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

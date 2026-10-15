@@ -1,6 +1,10 @@
 package in.choubeyshubham.ancillaryservice.mapper;
 
 import in.choubeyshubham.ancillaryservice.model.Ancillary;
+import in.choubeyshubham.payload.response.AncillaryResponse;
+import in.choubeyshubham.payload.response.InsuranceCoverageResponse;
+
+import java.util.List;
 
 public class AncillaryMapper {
 
