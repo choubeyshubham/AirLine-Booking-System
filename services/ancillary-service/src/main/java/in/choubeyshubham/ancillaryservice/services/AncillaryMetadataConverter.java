@@ -6,6 +6,7 @@ import jakarta.persistence.Convert;
 import tools.jackson.databind.ObjectMapper;
 
 @Convert
+//@Converter
 public class AncillaryMetadataConverter implements AttributeConverter<AncillaryMetadata,String> {
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
