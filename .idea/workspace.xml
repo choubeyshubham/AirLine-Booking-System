@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3f43c1c1-5195-46a9-adab-6f6bd8d445b0" name="Changes" comment="Misc changes added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ancillary-service/src/main/java/in/choubeyshubham/ancillaryservice/mapper/FlightCabinAncillaryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/ancillary-service/src/main/java/in/choubeyshubham/ancillaryservice/mapper/FlightCabinAncillaryMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -355,7 +356,8 @@
       <workItem from="1792071473495" duration="198000" />
       <workItem from="1792576731705" duration="933000" />
       <workItem from="1793414524747" duration="4968000" />
-      <workItem from="1793630531482" duration="3418000" />
+      <workItem from="1793630531482" duration="3470000" />
+      <workItem from="1794211453546" duration="1358000" />
     </task>
     <servers />
   </component>
