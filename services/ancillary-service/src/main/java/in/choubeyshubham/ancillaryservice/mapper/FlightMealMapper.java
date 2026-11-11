@@ -1,6 +1,7 @@
 package in.choubeyshubham.ancillaryservice.mapper;
 
 import in.choubeyshubham.ancillaryservice.model.FlightMeal;
+import in.choubeyshubham.payload.response.FlightMealResponse;
 
 public class FlightMealMapper {
 

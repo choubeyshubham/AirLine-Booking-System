@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="core" />
         <module name="flight-ops-service" />
+        <module name="airline-core-service" />
         <module name="location-service" />
         <module name="common-lib" />
         <module name="user-service" />
@@ -22,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="AirLine Booking System" options="-parameters" />
       <module name="Airline-Booking-System" options="-parameters" />
+      <module name="airline-core-service" options="-parameters" />
       <module name="ancillary-service" options="-parameters" />
       <module name="cloud" options="-parameters" />
       <module name="common-lib" options="-parameters" />
