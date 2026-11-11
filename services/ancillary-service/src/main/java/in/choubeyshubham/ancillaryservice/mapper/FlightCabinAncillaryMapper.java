@@ -1,5 +1,6 @@
 package in.choubeyshubham.ancillaryservice.mapper;
 
+import in.choubeyshubham.ancillaryservice.model.FlightCabinAncillary;
 import in.choubeyshubham.payload.response.FlightCabinAncillaryResponse;
 import in.choubeyshubham.payload.response.InsuranceCoverageResponse;
 
