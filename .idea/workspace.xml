@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f43c1c1-5195-46a9-adab-6f6bd8d445b0" name="Changes" comment="Misc changes added" />
+    <list default="true" id="3f43c1c1-5195-46a9-adab-6f6bd8d445b0" name="Changes" comment="Misc changes added">
+      <change afterPath="$PROJECT_DIR$/services/ancillary-service/src/main/java/in/choubeyshubham/ancillaryservice/repository/InsuranceCoverageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -361,6 +364,8 @@
       <workItem from="1794413693188" duration="4373000" />
       <workItem from="1794458158896" duration="155000" />
       <workItem from="1794541164921" duration="108000" />
+      <workItem from="1794669582550" duration="937000" />
+      <workItem from="1794807034877" duration="94000" />
     </task>
     <servers />
   </component>
