@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f43c1c1-5195-46a9-adab-6f6bd8d445b0" name="Changes" comment="Misc changes added">
-      <change afterPath="$PROJECT_DIR$/services/ancillary-service/src/main/java/in/choubeyshubham/ancillaryservice/repository/InsuranceCoverageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +46,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/choubeyshubham/AirLine-Booking-System.git&quot;,
-    &quot;accountId&quot;: &quot;c60786ca-87d1-4ff8-a1a2-969274dce6be&quot;
+    &quot;accountId&quot;: &quot;42ad9c42-736e-41c6-ad54-900b7714bf2b&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
@@ -60,8 +60,24 @@
   &quot;isMigrated&quot;: true
 }</component>
   <component name="McpProjectServerCommands">
-    <commands />
-    <urls />
+    <McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="" />
+      <option name="programPath" value="" />
+      <option name="arguments" value="" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
+    <McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="" />
+      <option name="programPath" value="" />
+      <option name="arguments" value="" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
@@ -198,25 +214,8 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
-    <option name="configurationStatuses">
-      <map>
-        <entry key="SpringBootApplicationConfigurationType">
-          <value>
-            <map>
-              <entry key="AirlineCoreServiceApplication" value="STOPPED" />
-              <entry key="AncillaryServiceApplication" value="STOPPED" />
-              <entry key="FlightOpsServiceApplication" value="STOPPED" />
-              <entry key="LocationServiceApplication" value="STOPPED" />
-              <entry key="PricingServiceApplication" value="STOPPED" />
-              <entry key="SeatServiceApplication" value="STOPPED" />
-              <entry key="UserServiceApplication" value="STOPPED" />
-            </map>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AncillaryServiceApplication">
+  <component name="RunManager">
     <configuration name="AirlineCoreServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="airline-core-service" />
@@ -273,14 +272,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
